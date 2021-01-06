@@ -65,25 +65,57 @@ class OnlineTest extends JFrame implements ActionListener {
 			if (current == 4) {
 				if(count<3) {
 				btnNext.setEnabled(false);
-				btnBookmark.setText("Result");}
-				
-						final ImageIcon icon = new ImageIcon("source.gif");
+				btnBookmark.setText("Result");
+				 if(count<3){
+						final ImageIcon icon = new ImageIcon("lose.gif");
 	                 Object invisibleChar = null;
 			
-					JOptionPane.showMessageDialog(null,invisibleChar, "YOU WON ! ", JOptionPane.INFORMATION_MESSAGE, icon);}
+					JOptionPane.showMessageDialog(null,invisibleChar, "YOU WON ! ", JOptionPane.INFORMATION_MESSAGE, icon);
 					
-			
+			}else if(count>3) {
+				final ImageIcon icon = new ImageIcon("source.gif");
+                Object invisibleChar = null;
+		
+				JOptionPane.showMessageDialog(null,invisibleChar, "YOU WON ! ", JOptionPane.INFORMATION_MESSAGE, icon);
+			}
+				}
 			} 
 			if (current == 9) {
 				if(count<6) {
 				btnNext.setEnabled(false);
-				btnBookmark.setText("Result");}
+				btnBookmark.setText("Result");
+				 if(count<3){
+						final ImageIcon icon = new ImageIcon("lose.gif");
+	                 Object invisibleChar = null;
+			
+					JOptionPane.showMessageDialog(null,invisibleChar, "YOU WON ! ", JOptionPane.INFORMATION_MESSAGE, icon);
+					
+			}else if(count>3) {
+				final ImageIcon icon = new ImageIcon("source.gif");
+             Object invisibleChar = null;
+		
+				JOptionPane.showMessageDialog(null,invisibleChar, "YOU WON ! ", JOptionPane.INFORMATION_MESSAGE, icon);
+			}
+				}
 			}
 			
 			if (current == 14) {
 				
 				btnNext.setEnabled(false);
 				btnBookmark.setText("Result");
+				 if(count<3){
+						final ImageIcon icon = new ImageIcon("lose.gif");
+	                 Object invisibleChar = null;
+			
+					JOptionPane.showMessageDialog(null,invisibleChar, "YOU WON ! ", JOptionPane.INFORMATION_MESSAGE, icon);
+					
+			}else if(count>3) {
+				final ImageIcon icon = new ImageIcon("source.gif");
+             Object invisibleChar = null;
+		
+				JOptionPane.showMessageDialog(null,invisibleChar, "YOU WON ! ", JOptionPane.INFORMATION_MESSAGE, icon);
+			}
+				}
 			}
 			 
 			
@@ -121,7 +153,8 @@ class OnlineTest extends JFrame implements ActionListener {
 			JOptionPane.showMessageDialog(this, "correct answers= " + count);
 			System.exit(0);
 		}
-	}
+		}
+	
 
 	// SET Questions with options
 	void set() {
